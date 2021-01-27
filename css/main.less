@@ -55,13 +55,15 @@ body {
 
 .header .menu .navbar .nav-item {
     margin-top: 15px;
-    padding-left: 35px;
-    font-size: 16px;
+    margin-left: -1px;
+    padding-left: 36px;
+    // font-size: 16px;
     line-height: 28px;
-    color: #fff;
-    font-weight: 400;
-    font-family: @font-family;
-    text-align: center;
+    // color: #fff;
+    // font-weight: 400;
+    // font-family: @font-family;
+    // text-align: center;
+    .text-format(16px, 400, #fff, 0.1px);
 }
 
 .header .menu .navbar .menu-icon{
@@ -99,23 +101,25 @@ body {
 /******************BANNER****************/
 .title-banner {
     position: absolute;
-    left: 375px;
-    top: 300px;
+    left: 374px;
+    top: 301px;
     width: 550px;
     color: #fff;
 }
 
 
 .title-banner h1 {
-    font-size: 60px;
-    font-weight: @banner-title-font;
-    font-family: @font-family;
+    // font-size: 60px;
+    // font-weight: @banner-title-font;
+    // font-family: @font-family;
+    .text-format(60px, @banner-title-font, #fff, 1px);
 }
 
 .title-banner h2 {
-    font-size: 40px;
-    font-weight: @banner-title-font;
-    font-family: @font-family;
+    // font-size: 40px;
+    // font-weight: @banner-title-font;
+    // font-family: @font-family;
+    .text-format(40px, @banner-title-font, #fff, 0.5px);
 }
 
 .title-banner p {
@@ -125,17 +129,20 @@ body {
 .title-content {
     width: 532px;
     height: 60px;
-    font-size: @font-size;
-    line-height: @line-height;
-    font-weight: @font-weight;
-    font-family: @font-family;
+    // font-size: @font-size;
+    // line-height: @line-height;
+    // font-weight: @font-weight;
+    // font-family: @font-family;
+    .text-format(@font-size, @font-weight, #fff, -0px);
+    line-height: 24px;
 
     margin-top: 26px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .btn{
     margin-top: 15px;
+    margin-left: -2px;
     width: 170px;
     height: 50px;
 }

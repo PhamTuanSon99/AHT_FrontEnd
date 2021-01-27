@@ -26,13 +26,14 @@ body {
 }
 .header .menu .navbar .nav-item {
   margin-top: 15px;
-  padding-left: 35px;
-  font-size: 16px;
+  margin-left: -1px;
+  padding-left: 36px;
   line-height: 28px;
-  color: #fff;
+  font-size: 16px;
   font-weight: 400;
   font-family: Poppins;
-  text-align: center;
+  color: #fff;
+  letter-spacing: 0.1px;
 }
 .header .menu .navbar .menu-icon {
   margin-left: 15px;
@@ -64,8 +65,8 @@ body {
 /******************BANNER****************/
 .title-banner {
   position: absolute;
-  left: 375px;
-  top: 300px;
+  left: 374px;
+  top: 301px;
   width: 550px;
   color: #fff;
 }
@@ -73,11 +74,15 @@ body {
   font-size: 60px;
   font-weight: 700;
   font-family: Poppins;
+  color: #fff;
+  letter-spacing: 1px;
 }
 .title-banner h2 {
   font-size: 40px;
   font-weight: 700;
   font-family: Poppins;
+  color: #fff;
+  letter-spacing: 0.5px;
 }
 .title-banner p {
   margin-top: 5px;
@@ -86,14 +91,17 @@ body {
   width: 532px;
   height: 60px;
   font-size: 14px;
-  line-height: 24px;
   font-weight: 400px;
   font-family: Poppins;
+  color: #fff;
+  letter-spacing: 0px;
+  line-height: 24px;
   margin-top: 26px;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 .btn {
   margin-top: 15px;
+  margin-left: -2px;
   width: 170px;
   height: 50px;
 }
