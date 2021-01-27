@@ -121,6 +121,26 @@ body {
   max-height: 249px;
   overflow: hidden;
 }
+.crop-image h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Poppins;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 32%;
+}
+.crop-image p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Poppins;
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 5%;
+}
 .crop-image img {
   max-width: 100%;
   height: auto;
@@ -168,7 +188,6 @@ body {
   float: left;
 }
 .product .product-border .product-image {
-  justify-content: ;
   height: 270px;
   width: 230px;
 }
