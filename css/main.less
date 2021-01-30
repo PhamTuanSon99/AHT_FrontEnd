@@ -52,11 +52,11 @@ body {
 
 .navbar-brand {
     margin-top: 10px;
-    margin-left: -4%;
+    margin-left: -5%;
 }  
 
 .header .menu .navbar .nav-item {
-    margin-top: 15px;
+    // margin-top: 15px;
     margin-left: -1px;
     padding-left: 36px;
     // font-size: 16px;
@@ -77,6 +77,10 @@ body {
     }
 }
 
+.header .menu .navbar {
+    width: 1300px;
+}
+
 .header .menu .navbar-nav {
     margin-left: 30px;
 }
@@ -85,12 +89,13 @@ body {
     color: #fff;
 }
 
-.header .menu .navbar toggler {
+.header .menu .navbar-toggler {
     background: rgba(255, 255, 255, 0.8);
 }
 
 .head-image {
     position: relative;
+    width: 100%;
     background-color: #000;
     img{
         max-width: 100%;
@@ -103,7 +108,7 @@ body {
 /******************BANNER****************/
 .title-banner {
     position: absolute;
-    left: 374px;
+    left: 19.5%;
     top: 301px;
     width: 550px;
     color: #fff;
@@ -155,8 +160,14 @@ body {
     font-weight: @font-weight;
 }
 
-.alt-row{
+.flex{
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+
+.alt-row{
+    .flex;
 }
 
 .img-border {
@@ -165,7 +176,7 @@ body {
     border: 1px solid #fff;
     box-shadow: 1px 1px #888;
     background-color: #fff;
-    width: 1170px;
+    width: 61%px;
     height: 500px;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
 }
@@ -196,7 +207,7 @@ body {
 
 /******************PRODUCT****************/
 .tabs-menu {
-    margin-left: 370px;
+    // margin-left: 370px;
     margin-top: 90px;
 }
 
@@ -214,14 +225,14 @@ body {
 
 .hr-content{
     margin-top: 5px;
-    margin-left: @margin-left + 5px;
+    // margin-left: @margin-left + 5px;
     width: 1170px;
     height: 1px;
 }
 
 .hr-content-active{
     margin-top: -19px;
-    margin-left: @margin-left + 5px;
+    // margin-left: @margin-left + 5px;
     width: 143px;
     height: 1px;
     background-color: #dd2f31;
@@ -435,16 +446,12 @@ body {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	.navbar-brand {
-        margin-top: -50px;
-    }
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.navbar-brand {
-        margin-top: -20px;
-    }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
