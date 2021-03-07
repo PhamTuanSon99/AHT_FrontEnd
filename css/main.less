@@ -323,7 +323,7 @@ body {
         &:hover {
             box-shadow: 0 0 2.5px rgba(0,0,0,0.2);
             .product-icon__list {
-                opacity: 0.7;
+                opacity: 0.8;
             }
         }
 
@@ -347,8 +347,8 @@ body {
 
 .product__price {
     padding-top: 1px;
-    padding-left: 29px;
-    .text-format(14px, 700, #000, 0.1px);
+    padding-left: 30px;
+    .text-format(14px, 700, #000, 0.05px);
 }
 
 .product-icon__list {
@@ -366,9 +366,100 @@ body {
     justify-content: center;
     margin-bottom: 15px;
     border-radius: 5px 0 5px 0;
+    box-shadow: 0 0 2.5px rgba(0,0,0,0.2);
 
     &:hover, .active {
         background-color: #dd2f13;
+    }
+}
+
+/******************************SLIDE_SHOW********************************/
+.slide-show{
+    position: relative;
+
+    &__title {
+        text-align: center;
+        .text-format(36px, 700, #000, .4px);
+        line-height: 30px;
+        padding-top: 91px;
+        text-transform: capitalize;
+    }
+    
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 56px;
+    }
+    
+    &__body {
+        margin: 0 auto;
+        width: 771px;
+        padding-top: 22px;
+    
+        .text-format(18px, 400, #777);
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    &__signature {
+        padding-top: 25px;
+        text-align: center;
+        .text-format(18px, 700, #000, .7px);
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    &__sub-signature {
+        text-align: center;
+        .text-format(14px, 400, #000);
+        text-transform: initial;
+    }
+
+    .carousel::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -152px;
+        left: 0;
+        background-color: #ccc;
+    }
+
+    &__end {
+        display: flex;
+        margin-top: 192px;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+}
+
+/********************************FOOTER**********************************/
+.footer {
+    background-color: #222;
+    color: #ccc;
+    &__brand {
+        display: block;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    &__body {
+        display: block;
+        margin: 0 auto;
+        padding-top: 34px;
+        .text-format(14px, 400, #777);
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 42px;
+        width: 770px;
+        color: #ccc;
+    }
+
+    &__icons {
+        display: block;
+        margin: 0 auto;
     }
 }
 
