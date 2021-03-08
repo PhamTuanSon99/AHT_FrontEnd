@@ -1,0 +1,60 @@
+.slide-show{
+    position: relative;
+
+    &__title {
+        text-align: center;
+        .text-format(36px, 700, #000, .4px);
+        line-height: 30px;
+        padding-top: 91px;
+        text-transform: capitalize;
+    }
+    
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 56px;
+    }
+    
+    &__body {
+        margin: 0 auto;
+        width: 771px;
+        padding-top: 22px;
+    
+        .text-format(18px, 400, #777);
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    &__signature {
+        padding-top: 25px;
+        text-align: center;
+        .text-format(18px, 700, #000, .7px);
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    &__sub-signature {
+        text-align: center;
+        .text-format(14px, 400, #000);
+        text-transform: initial;
+    }
+
+    .carousel::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -152px;
+        left: 0;
+        background-color: #ccc;
+    }
+
+    &__end {
+        display: flex;
+        margin-top: 192px;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+}
