@@ -26,6 +26,11 @@ body {
     display: -ms-flexbox;
 }
 
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
 @import "_header.less";
 @import "_banner.less";
@@ -33,10 +38,3 @@ body {
 @import "_product.less";
 @import "_slide.less";
 @import "_footer.less";
-
-/******************************RESPONSIVE********************************/
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
