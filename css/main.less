@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+@import "_header.less";
+@import "_banner.less";
+@import "_gallery.less";
+@import "_product.less";
+@import "_slide.less";
+@import "_footer.less";
+
 body {
     box-sizing: border-box;
     position: relative;
@@ -26,15 +33,209 @@ body {
     display: -ms-flexbox;
 }
 
+
+//desktop
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
     }
 }
 
-@import "_header.less";
-@import "_banner.less";
-@import "_gallery.less";
-@import "_product.less";
-@import "_slide.less";
-@import "_footer.less";
+@media only screen and (max-width: 1199px) {
+    .header__logo {
+        padding-top: 8px;
+    }
+
+    .header__menu--inline {
+        padding: 0 20px;
+    }
+
+    .header__menu--inline ul li {
+        font-size: 14px;
+        line-height: 28px;
+        padding: 0 17.2px;
+    }
+
+    .banner_introduce__content {
+        margin: 16px 0 0 -3px;
+    }
+
+    .gallery {
+        margin-top: -30px;
+
+        &__p {
+            line-height: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header__menu--inline ul li {
+        padding: 0 7.2px;
+    }
+
+    .header__logo {
+        padding-top: 14px;
+    }
+
+    .header__icons {
+        position: absolute;
+        right: 20px;
+        top: 22px;
+
+        ul li {
+            padding: 0 14px;
+
+            &:nth-child(3) {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .gallery__h3 {
+        padding-top: 0;
+        font-size: 16px;
+    }
+
+    .gallery__p {
+        font-size: 12px;
+    }
+
+    .gallery .row .col-4 .gallery__icon {
+        margin-top: 10px;
+        width: 44px;
+        height: 57px;
+    }
+
+    .banner_introduce__content {
+        width: 480px;
+    }
+
+    .banner_title {
+        font-size: 55px;
+        line-height: 50px;
+
+        .banner_subtitle {
+            font-size: 36px;
+        }
+    
+    }
+    
+    .banner_description {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .banner_btn {
+        margin-top: 20px;
+        width: 140px;
+    }
+
+    .slide-show__end {
+        margin-top: 160px;
+        margin-bottom: 5px;
+
+        img {
+            width: 25.333333%;
+            margin: 20px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .header__logo {
+        width: 27%;
+    }
+
+    .header__icons {
+        right: 80px;
+
+        ul li {
+            padding: 0 10px;
+
+            &:nth-child(3) {
+                padding-left: 12px;
+            }
+        }
+    }
+
+    .header__menu--inline {
+        display: none;
+        position: absolute;
+        top: 25px;
+        left: 250px;
+        z-index: 10;
+        
+        &.show {
+            display: block;
+            ul li {
+                font-weight: 700;
+                letter-spacing: 2px;
+                display: block;
+                background-color: #000;
+            }
+        }
+        
+    }
+
+    .header .navbar {
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 32px;
+    }
+
+    .footer__menu ul li {
+        line-height: 30px;
+    }
+
+    .banner_introduce__content {
+        width: 325px;
+    }
+
+    .banner_title {
+        font-size: 38px;
+        line-height: 40px;
+
+        .banner_subtitle {
+            font-size: 26px;
+            line-height: 20px;
+        }
+    
+    }
+    
+    .banner_description {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .banner_btn {
+        margin-top: 0;
+        width: 110px;
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .gallery {
+        margin-top: -10px;
+    }
+
+    .slide-show__title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}

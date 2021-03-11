@@ -19,6 +19,11 @@
             <div class="container">
                 <div class="header-body">
                     <div class="header__logo"><img src="images/logo.png" alt="" /></div>
+                    <nav class="navbar" id="nav__btn">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav__btn-toggle" aria-controls="nav__btn-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
                     <div class="header__menu--inline">
                         <ul>
                             <li><a href="">Home</a></li>
@@ -29,6 +34,7 @@
                             <li><a href="">Contacts</a></li>
                         </ul>
                     </div>
+
                     <div class="header__icons">
                         <ul>
                             <li><a href=""><i class="fas fa-search"></i></a></li>
@@ -43,12 +49,14 @@
 
     <section class="banner">
         <div class="banner_img">
-            <div class="banner_introduce">
-                <h1 class="banner_title">Dumbbells Shop <span class="banner-subtitle">Best body fitness</span></h1>
-                <p class="banner_description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                </p>
-                <button class="banner_btn" type="button">SHOP NOW</button>
+            <div class="banner_introduce container">
+                <div class="banner_introduce__content ">
+                    <h1 class="banner_title">Dumbbells Shop <span class="banner_subtitle">Best body fitness</span></h1>
+                    <p class="banner_description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    </p>
+                    <button class="banner_btn" type="button">SHOP NOW</button>
+                </div>
             </div>
             <img src="images/background.png" alt="banner" />
         </div>
@@ -82,18 +90,20 @@
         <div class="container">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">top sellers</a>
+                    <p class="nav-link active">top sellers</p>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">featured</a>
+                    <p class="nav-link">
+                        featured</p>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">most reviews</a>
+                    <p class="nav-link">
+                        most reviews</p>
                 </li>
             </ul>
             <div class="product__body">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 1 -->
                         <div class="product__items">
                             <img src="images/Body Champ Cardio Dual Trainer.png" alt="" />
@@ -109,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 2 -->
                         <div class="product__items">
                             <img src="images/Body Solid GCEC340 Cam Series Leg Extension Curl Machine.png" alt="" />
@@ -125,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 3 -->
                         <div class="product__items">
                             <img src="images/Bowflex BXE116 Elliptical.png" alt="" />
@@ -141,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 4 -->
                         <div class="product__items">
                             <img src="images/ETHOS GHD.png" alt="" />
@@ -157,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 5 -->
                         <div class="product__items">
                             <img src="images/AFG Pro 7.png" alt="" />
@@ -173,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 6 -->
                         <div class="product__items">
                             <img src="images/Weight Bench.png" alt="" />
@@ -189,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 7 -->
                         <div class="product__items">
                             <img src="images/ProForm Hiit Trainer Lite 5.png" alt="" />
@@ -205,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <!-- item 8 -->
                         <div class="product__items">
                             <img src="images/Fitness Gear Pro.png" alt="" />
@@ -263,50 +273,86 @@
             <!-- </div> -->
 
             <div class="footer__menu">
-                <ul class="footer__menu__header">
-                    <li><a href="">contact us</a></li>
-                    <li><a href="">my account</a></li>
-                    <li><a href="">information</a></li>
-                    <li><a href="">quick link</a></li>
-                </ul>
-                <ul class="footer__menu__list">
-                    <li class="footer__menu__column">
-                        <ul class="footer__menu__items">
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <p class="footer__menu__header">contact us</p>
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <a href=""><span class="footer__menu__text">200 Lincohn Ave, Salinas, CA
+                                        93901</span></a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i></span>
+                                <a href=""><span class="footer__menu__text">023 32423 223</span></a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <a href=""><span class="footer__menu__text">gymax@example.com</span></a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-clock"></i></span>
+                                <a href=""><span class="footer__menu__text">9:00 - 20:00 All day</span></a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="footer__menu__column">
-                        <ul class="footer__menu__items">
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p class="footer__menu__header">my account</p>
+                        <ul>
+                            <li>
+                                <a href="">My account</a>
+                            </li>
+                            <li>
+                                <a href="">check out</a>
+                            </li>
+                            <li>
+                                <a href="">register</a>
+                            </li>
+                            <li>
+                                <a href="">Login</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="footer__menu__column">
-                        <ul class="footer__menu__items">
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p class="footer__menu__header">information</p>
+                        <ul>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="">Terms of user</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="footer__menu__column">
-                        <ul class="footer__menu__items">
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
-                            <li>abc</li>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <p class="footer__menu__header">quick link</p>
+                        <ul>
+                            <li>
+                                <a href="">New user</a>
+                            </li>
+                            <li>
+                                <a href="">Help center</a>
+                            </li>
+                            <li>
+                                <a href="">Report spam</a>
+                            </li>
+                            <li>
+                                <a href="">FAQs</a>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div class="footer__copyright">
-                <p>abcxyzz</p>
-            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p>Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
         </div>
     </section>
 
@@ -315,6 +361,10 @@
             $('.nav-link').click(function() {
                 $('.nav-link.active').removeClass('active');
                 $(this).addClass('active');
+            })
+
+            $('.navbar').click(function() {
+                $('.header__menu--inline').toggleClass('show');
             })
         })
     </script>
