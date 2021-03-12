@@ -1,6 +1,18 @@
+@_footer_background: #222;
+@_footer_color: #ccc;
+@_footer_body_text: #777;
+@_footer_body_color: #ccc;
+@_footer_icons: #ccc;
+@_footer_icons_after: #ccc;
+@_footer_menu_header: #fff;
+@_footer_menu_li: #777;
+@_footer_menu_a: #fff;
+@_footer_copyright: #000;
+@_footer_copyright_text: #777;
+
 .footer {
-    background-color: #222;
-    color: #ccc;
+    background-color: @_footer_background;
+    color: @_footer_color;
     &__brand {
         display: block;
         margin: 0 auto;
@@ -11,12 +23,12 @@
         display: block;
         margin: 0 auto;
         padding-top: 34px;
-        .text-format(14px, 400, #777);
+        .text-format(14px, 400, @_footer_body_text);
         line-height: 24px;
         text-align: center;
         padding-bottom: 40px;
         max-width: 770px;
-        color: #ccc;
+        color: @_footer_body_color;
     }
 
     &__icons {
@@ -30,7 +42,7 @@
                 display: inline;
                 padding: 0 22px;
                 a {
-                    color: #ccc;
+                    color: @_footer_icons;
                     text-decoration: none;
                 }
             }
@@ -43,7 +55,7 @@
             position: absolute;
             left: 0;
             bottom: -53px;
-            background-color:  #ccc;
+            background-color:  @_footer_icons_after;
         }
     }
 
@@ -51,7 +63,7 @@
         margin-top: 125px;
 
         &__header {
-            .text-format(18px, 700, #fff, .5px);
+            .text-format(18px, 700, @_footer_menu_header, .5px);
             line-height: 30px;
             text-transform: uppercase;
         }
@@ -60,12 +72,12 @@
             list-style-type: none;
             padding-left: 0;
             li {
-                .text-format(14px, 400, #777);
+                .text-format(14px, 400, @_footer_menu_li);
                 line-height: 40px;
 
                 a {
                     text-decoration: none;
-                    color: #fff;
+                    color: @_footer_menu_a;
                 }
             }
         }
@@ -80,14 +92,14 @@
     }
 
     &__copyright {
-        background-color: black;
+        background-color: @_footer_copyright;
         margin-top: 25px;
-        height: 50px;
+        padding: 7px 15px 0.1px 15px;
         p {
-            padding-top: 7px;
+            // padding-top: 7px;
             width: 100%;
             text-align: center;
-            .text-format(14px, 400, #777);
+            .text-format(14px, 400, @_footer_copyright_text);
             line-height: 30px;
         }
     }

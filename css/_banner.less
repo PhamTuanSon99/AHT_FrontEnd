@@ -1,3 +1,8 @@
+@_banner_title: #fff;
+@_banner_description: #fff;
+@_banner_btn: #fff;
+@_banner_btn_border: #fff;
+
 .banner_img {
     position: relative;
 
@@ -21,7 +26,7 @@
 }
 
 .banner_title {
-    .text-format(60px, 700, #fff, 1.1px);
+    .text-format(60px, 700, @_banner_title, 1.1px);
     line-height: 70px;
 
     .banner_subtitle {
@@ -32,12 +37,14 @@
     }
 }
 
+
 .banner_description {
     padding-left: 3px;
     padding-top: 8px;
     line-height: 24px;
-    .text-format(14px, 400, #fff);
+    .text-format(14px, 400, @_banner_description);
 }
+
 
 .banner_btn {
     margin-left: 3px;
@@ -45,6 +52,6 @@
     width: 170px;
     height: 50px;
     background: none;
-    .text-format(14px, 400, #fff, 0);
-    border: 1px solid #fff;
+    .text-format(14px, 400, @_banner_btn, 0);
+    border: 1px solid @_banner_btn_border;
 }
