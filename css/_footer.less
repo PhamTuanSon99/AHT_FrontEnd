@@ -1,18 +1,18 @@
-@_footer_background: #222;
-@_footer_color: #ccc;
-@_footer_body_text: #777;
-@_footer_body_color: #ccc;
-@_footer_icons: #ccc;
-@_footer_icons_after: #ccc;
-@_footer_menu_header: #fff;
-@_footer_menu_li: #777;
-@_footer_menu_a: #fff;
-@_footer_copyright: #000;
-@_footer_copyright_text: #777;
+@footer_background: #222;
+@footer_color: #ccc;
+@footer_body_text: #777;
+@footer_body_color: #ccc;
+@footer_icons: #ccc;
+@footer_icons_after: #ccc;
+@footer_menu_header: #fff;
+@footer_menu_li: #777;
+@footer_menu_a: #fff;
+@footer_copyright: #000;
+@footer_copyright_text: #777;
 
 .footer {
-    background-color: @_footer_background;
-    color: @_footer_color;
+    background-color: @footer_background;
+    color: @footer_color;
     &__brand {
         display: block;
         margin: 0 auto;
@@ -23,12 +23,12 @@
         display: block;
         margin: 0 auto;
         padding-top: 34px;
-        .text-format(14px, 400, @_footer_body_text);
+        .text-format(14px, 400, @footer_body_text);
         line-height: 24px;
         text-align: center;
         padding-bottom: 40px;
         max-width: 770px;
-        color: @_footer_body_color;
+        color: @footer_body_color;
     }
 
     &__icons {
@@ -42,7 +42,7 @@
                 display: inline;
                 padding: 0 22px;
                 a {
-                    color: @_footer_icons;
+                    color: @footer_icons;
                     text-decoration: none;
                 }
             }
@@ -55,7 +55,7 @@
             position: absolute;
             left: 0;
             bottom: -53px;
-            background-color:  @_footer_icons_after;
+            background-color:  @footer_icons_after;
         }
     }
 
@@ -63,7 +63,7 @@
         margin-top: 125px;
 
         &__header {
-            .text-format(18px, 700, @_footer_menu_header, .5px);
+            .text-format(18px, 700, @footer_menu_header, .5px);
             line-height: 30px;
             text-transform: uppercase;
         }
@@ -72,12 +72,12 @@
             list-style-type: none;
             padding-left: 0;
             li {
-                .text-format(14px, 400, @_footer_menu_li);
+                .text-format(14px, 400, @footer_menu_li);
                 line-height: 40px;
 
                 a {
                     text-decoration: none;
-                    color: @_footer_menu_a;
+                    color: @footer_menu_a;
                 }
             }
         }
@@ -92,14 +92,14 @@
     }
 
     &__copyright {
-        background-color: @_footer_copyright;
+        background-color: @footer_copyright;
         margin-top: 25px;
         padding: 7px 15px 0.1px 15px;
         p {
             // padding-top: 7px;
             width: 100%;
             text-align: center;
-            .text-format(14px, 400, @_footer_copyright_text);
+            .text-format(14px, 400, @footer_copyright_text);
             line-height: 30px;
         }
     }
