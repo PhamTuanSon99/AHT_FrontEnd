@@ -3,6 +3,7 @@
 @slide_show_signature: #000;
 @slide_show_sub_signature: #000;
 @slide_show_carousel: #ccc;
+@bg-owl-dot   : #dd2f31;
 
 .slide-show {
     position: relative;
@@ -70,3 +71,15 @@
     }
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: @bg-owl-dot;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+.owl-carousel .owl-item img {
+    width: 80px;
+}
