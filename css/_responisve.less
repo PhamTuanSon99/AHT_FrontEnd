@@ -1,46 +1,7 @@
-@import "_header.less";
-@import "_banner.less";
-@import "_gallery.less";
-@import "_product.less";
-@import "_slide.less";
-@import "_footer.less";
-@import "_font.less";
 
 @_header_color_res: rgba(8, 8, 8, 0.7);
 @_header_menu_li_res: #000;
 @_gallery_items_res: rgba(0,0,0,0.5);
-
-body {
-    box-sizing: border-box;
-    position: relative;
-    font-family: Poppins-Regular;
-}
-
-.div-format(@_padding: 0, @_margin: 0, @_background-color: #000) {
-    padding: @_padding;
-    margin: @_margin;
-    background-color: @_background-color;
-}
-
-.text-format(@_font-size: 0, @_font-weight: 0, @_color: #000, @_letter-spacing: 0, @_font-family: Poppins-regular) {
-    font-size: @_font-size;
-    font-weight: @_font-weight;
-    font-family: @_font-family;
-    color: @_color;
-    letter-spacing: @_letter-spacing;
-}
-
-.flex {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-}
-
-button:focus {
-    outline: none;
-}
-
-
 //desktop
 @media only screen and (min-width: 1200px) {
     .container {

@@ -12,6 +12,7 @@
 .footer {
     background-color: @footer_background;
     color: @footer_color;
+
     &__brand {
         display: block;
         margin: 0 auto;
@@ -21,8 +22,8 @@
     &__body {
         display: block;
         margin: 0 auto;
-        padding-top: 32px;
-        .text-format(14px, 400, @footer_body_text);
+        padding-top: 33px;
+        .text-format(14px, 400, @footer_body_text, -.04px);
         line-height: 24px;
         text-align: center;
         padding-bottom: 40px;
@@ -32,13 +33,15 @@
     &__icons {
         position: relative;
         text-align: center;
-        
+
         ul {
             list-style-type: none;
             padding-left: 10px;
+
             li {
                 display: inline;
                 padding: 0 22px;
+
                 a {
                     color: @footer_icons;
                     text-decoration: none;
@@ -53,7 +56,7 @@
             position: absolute;
             left: 0;
             bottom: -53px;
-            background-color:  @footer_icons_after;
+            background-color: @footer_icons_after;
         }
     }
 
@@ -61,7 +64,8 @@
         margin-top: 125px;
 
         &__header {
-            .text-format(18px, 700, @footer_menu_header, 0, Poppins-Bold);
+            margin-top: 1px;
+            .text-format(18px, 700, @footer_menu_header, -.15px, Poppins-Bold);
             line-height: 26px;
             text-transform: uppercase;
         }
@@ -69,6 +73,7 @@
         ul {
             list-style-type: none;
             padding-left: 0;
+
             li {
                 .text-format(14px, 400, @footer_menu_li);
                 line-height: 41px;
@@ -77,6 +82,13 @@
                     text-decoration: none;
                     color: @footer_menu_a;
                 }
+
+                &:nth-child(1) {
+                    a {
+                        font-size: 13px;
+                        letter-spacing: 0.2px;
+                    }
+                }
             }
         }
 
@@ -84,10 +96,7 @@
             padding-left: 12px;
             color: @footer_menu_a;
 
-            &:nth-child(1) {
-                font-size: 13px;
-                letter-spacing: 0.2px;
-            }
+
         }
 
         .fa-map-marker-alt {
@@ -99,11 +108,12 @@
         background-color: @footer_copyright;
         margin-top: 25px;
         padding: 6px 13px 1px 15px;
+
         p {
             // padding-top: 7px;
             width: 100%;
             text-align: center;
-            .text-format(14px, 400, @footer_copyright_text);
+            .text-format(14px, 400, @footer_copyright_text, -.1px);
             line-height: 30px;
         }
     }
