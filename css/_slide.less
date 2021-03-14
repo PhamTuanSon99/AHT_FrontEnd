@@ -1,20 +1,20 @@
-@_slide_show_title: #000;
-@_slide_show_body: #777;
-@_slide_show_signature: #000;  
-@_slide_show_sub_signature: #000; 
-@_slide_show_carousel: #ccc;
+@slide_show_title: #000;
+@slide_show_body: #777;
+@slide_show_signature: #000;
+@slide_show_sub_signature: #000;
+@slide_show_carousel: #ccc;
 
-.slide-show{
+.slide-show {
     position: relative;
 
     &__title {
         text-align: center;
-        .text-format(36px, 700, @_slide_show_title, .4px);
+        .text-format(36px, 700, @slide_show_title, 0, 'Poppins Bold');
         line-height: 30px;
         padding-top: 91px;
         text-transform: capitalize;
     }
-    
+
     &__img {
         display: block;
         margin: 0 auto;
@@ -25,22 +25,22 @@
         margin: 0 auto;
         padding-top: 22px;
         max-width: 765px;
-        .text-format(18px, 400, @_slide_show_body);
-        line-height: 30px;
+        .text-format(18px, 400, @slide_show_body);
+        line-height: 31px;
         text-align: center;
     }
-   
+
     &__signature {
         padding-top: 25px;
         text-align: center;
-        .text-format(18px, 700, @_slide_show_signature, .7px);
+        .text-format(18px, 700, @slide_show_signature, 0, 'Poppins Bold');
         text-transform: uppercase;
         line-height: 30px;
     }
- 
+
     &__sub-signature {
         text-align: center;
-        .text-format(14px, 400, @_slide_show_sub_signature);
+        .text-format(14px, 400, @slide_show_sub_signature);
         text-transform: initial;
     }
 
@@ -49,9 +49,9 @@
         width: 100%;
         height: 1px;
         position: absolute;
-        bottom: -152px;
+        bottom: -150px;
         left: 0;
-        background-color: @_slide_show_carousel;
+        background-color: @slide_show_carousel;
     }
 
     &__end {
@@ -62,5 +62,10 @@
         align-items: center;
         justify-content: space-between;
         padding: 0px 20px;
+
+        img {
+            margin-left: 3px;
+            margin-top: -1px;
+        }
     }
 }

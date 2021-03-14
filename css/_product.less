@@ -1,29 +1,31 @@
-@_product_navlink: #000;
-@_product_navlink_active: #dd2f13;
-@_product_navtabs_navlink_active: #dd2f13;
-@_product_navtabs_after: #ddd;
-@_product_body_items_hover_boxshadow: rgba(0, 0, 0, 0.2);
-@_product_name: #000;
-@_product_price: #000;
-@_product_icon_item: rgba(0,0,0,0.2);
-@_product_icon_item_hover: #dd2f13;
+@product_navlink: #000;
+@product_navlink_active: #dd2f13;
+@product_navtabs_navlink_active: #dd2f13;
+@product_navtabs_after: #ddd;
+@product_body_items_hover_boxshadow: rgba(0, 0, 0, 0.2);
+@product_name: #000;
+@product_price: #000;
+@product_icon_item: rgba(0,0,0,0.2);
+@product_icon_item_hover: #dd2f13;
 
 .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link {
-    margin-top: 88px;
+    margin-top: 87px;
     text-transform: uppercase;
-    .text-format(18px, 700, @_product_navlink, .5px);
+    .text-format(18px, 700, @product_navlink, 0, 'Poppins Bold');
     line-height: 24px;
-    padding-left: 18px;
+    padding-left: 17px;
     padding-right: 18px;
 }
 
 .nav-tabs .nav-link.active {
-    color: @_product_navlink_active;
+    color: @product_navlink_active;
     border: none;
 }
 
 .nav-tabs .nav-item .nav-link.active {
     position: relative;
+    padding-top: 10px;
+    padding-right: 18px;
 
     &::after {
         content: '';
@@ -31,9 +33,9 @@
         height: 2px;
         position: absolute;
         z-index: 1;
-        bottom: -9px;
+        bottom: -6px;
         left: 0;
-        background-color: @_product_navtabs_navlink_active;
+        background-color: @product_navtabs_navlink_active;
     }
 }
 
@@ -46,9 +48,9 @@
         width: 100%;
         height: 2px;
         position: absolute;
-        bottom: 8px;
+        bottom: 10px;
         left: 0;
-        background-color: @_product_navtabs_after;
+        background-color: @product_navtabs_after;
     }
 }
 
@@ -57,12 +59,12 @@
 
     .product__items {
         margin-top: 36px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         position: relative;
         padding-bottom: 15px;
 
         &:hover {
-            box-shadow: 0 0 2.5px @_product_body_items_hover_boxshadow;
+            box-shadow: 0 0 2.5px @product_body_items_hover_boxshadow;
             .product-icon__list {
                 opacity: 0.8;
             }
@@ -80,7 +82,7 @@
 .product__name {
     display: block;
     margin: 0 auto;
-    .text-format(14px, 400, @_product_name);
+    .text-format(14px, 400, @product_name, 0.05px);
     line-height: 24px;
     padding-top: 25px;
     padding-left: 29px;
@@ -89,7 +91,7 @@
 .product__price {
     padding-top: 1px;
     padding-left: 30px;
-    .text-format(14px, 700, @_product_price, 0.05px);
+    .text-format(14px, 700, @product_price, 0, 'Poppins Bold');
 }
 
 .product-icon__list {
@@ -107,9 +109,9 @@
     justify-content: center;
     margin-bottom: 15px;
     border-radius: 5px 0 5px 0;
-    box-shadow: 0 0 2.5px @_product_icon_item;
+    box-shadow: 0 0 2.5px @product_icon_item;
 
     &:hover, .active {
-        background-color: @_product_icon_item_hover;
+        background-color: @product_icon_item_hover;
     }
 }

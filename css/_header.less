@@ -1,31 +1,31 @@
-@_header_background: rgba(0, 0, 0, 0.4);
-@_header_background_top: rgba(0, 0, 0, 0.4);
-@_header_menu: #eee;
-@_header_menu_li: #fff;
-@_header_menu_a: #fff;
-@_header_icons_li_after: #fff;
-@_header_icons_a: #fff;
-@_header_navbar_fas: #fff;
+@header_background: rgba(0, 0, 0, 0.4);
+@header_background_top: rgba(0, 0, 0, 0.4);
+@header_menu: #eee;
+@header_menu_li: #fff;
+@header_menu_a: #fff;
+@header_icons_li_after: #fff;
+@header_icons_a: #fff;
+@header_navbar_fas: #fff;
 
 .header {
     position: absolute;
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: @_header_background;
+    background-color: @header_background;
     width: 100%;
 
     &_top {
         .flex;
         // height: 100px;
-        background-color: @_header_background_top;
+        background-color: @header_background_top;
     }
 
     &__menu {
         margin: 0 auto;
         width: 61%;
         padding-top: 20px;
-        color: @_header_menu;
+        color: @header_menu;
 
 
 
@@ -47,11 +47,11 @@
                     display: inline-block;
                     line-height: 28px;
                     padding: 0 24.2px;
-                    .text-format(16px, 400, @_header_menu_li, 0, "Poppins");
+                    .text-format(16px, 400, @header_menu_li, 0, "Poppins");
 
                     a {
                         text-decoration: none;
-                        color: @_header_menu_a;
+                        color: @header_menu_a;
                     }
                 }
             }
@@ -113,7 +113,7 @@
                     content: '';
                     width: 1px;
                     height: 100%;
-                    background: @_header_icons_li_after;
+                    background: @header_icons_li_after;
                     position: absolute;
                     left: 106%;
                     top: 0;
@@ -121,7 +121,7 @@
 
                 a {
                     text-decoration: none;
-                    color: @_header_icons_a;
+                    color: @header_icons_a;
                 }
             }
         }
@@ -133,7 +133,7 @@
         display: none;
         
         .fas {
-            color: @_header_navbar_fas;
+            color: @header_navbar_fas;
         }
     }
 }

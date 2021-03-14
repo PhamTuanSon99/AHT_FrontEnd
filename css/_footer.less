@@ -1,12 +1,11 @@
 @footer_background: #222;
 @footer_color: #ccc;
 @footer_body_text: #777;
-@footer_body_color: #ccc;
-@footer_icons: #ccc;
+@footer_icons: #777;
 @footer_icons_after: #ccc;
 @footer_menu_header: #fff;
 @footer_menu_li: #777;
-@footer_menu_a: #fff;
+@footer_menu_a: #777;
 @footer_copyright: #000;
 @footer_copyright_text: #777;
 
@@ -22,13 +21,12 @@
     &__body {
         display: block;
         margin: 0 auto;
-        padding-top: 34px;
+        padding-top: 32px;
         .text-format(14px, 400, @footer_body_text);
         line-height: 24px;
         text-align: center;
         padding-bottom: 40px;
         max-width: 770px;
-        color: @footer_body_color;
     }
 
     &__icons {
@@ -63,8 +61,8 @@
         margin-top: 125px;
 
         &__header {
-            .text-format(18px, 700, @footer_menu_header, .5px);
-            line-height: 30px;
+            .text-format(18px, 700, @footer_menu_header, 0, 'Poppins Bold');
+            line-height: 26px;
             text-transform: uppercase;
         }
 
@@ -73,7 +71,7 @@
             padding-left: 0;
             li {
                 .text-format(14px, 400, @footer_menu_li);
-                line-height: 40px;
+                line-height: 41px;
 
                 a {
                     text-decoration: none;
@@ -84,6 +82,7 @@
 
         &__text {
             padding-left: 12px;
+            color: @footer_menu_a;
         }
 
         .fa-map-marker-alt {
@@ -94,7 +93,7 @@
     &__copyright {
         background-color: @footer_copyright;
         margin-top: 25px;
-        padding: 7px 15px 0.1px 15px;
+        padding: 6px 13px 1px 15px;
         p {
             // padding-top: 7px;
             width: 100%;

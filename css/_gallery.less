@@ -1,13 +1,13 @@
-@_gallery_items: #fff;
-@_gallery_h3: #000;
-@_gallery_p: #777;
+@gallery_items: #fff;
+@gallery_h3: #000;
+@gallery_p: #777;
 
 .gallery {
     margin-top: -76px;
 
     &__items {
         position: relative;
-        background-color: @_gallery_items;
+        background-color: @gallery_items;
         max-height: 250px;
         overflow: hidden;
         padding-left: 0;
@@ -21,11 +21,11 @@
     &__items:nth-child(2n) img {
         display: block;
         margin: 0px auto;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     &__items:nth-child(4) img {
-        margin-top: 25px;
+        margin-top: 46px;
     }
 
     .row {
@@ -47,7 +47,7 @@
     }
 
     &__h3 {
-        .text-format(18px, 700, @_gallery_h3, .4px);
+        .text-format(18px, 700, @gallery_h3, 0, 'Poppins Bold');
         text-align: center;
         text-transform: uppercase;
         padding-top: 27px;
@@ -59,7 +59,8 @@
 
     &__p {
         margin: 0 auto;
-        .text-format(14px, 400, @_gallery_p);
+        margin-top: 17px;
+        .text-format(14px, 400, @gallery_p);
         max-width: 316px;
         line-height: 24px;
         text-align: center;

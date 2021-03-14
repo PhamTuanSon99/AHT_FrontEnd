@@ -14,7 +14,7 @@
 body {
     box-sizing: border-box;
     position: relative;
-    font-family: "Poppins";
+    font-family: 'Poppins';
 }
 
 .div-format(@_padding: 0, @_margin: 0, @_background-color: #000) {
@@ -74,6 +74,24 @@ button:focus {
         &__p {
             line-height: 15px;
         }
+
+        &__h3 {
+            padding-top: 0;
+        }
+    }
+
+    .gallery__items:nth-child(2n) img {
+        width: 20%;
+        margin-top: 22px;
+    }
+
+    .gallery__items:nth-child(4) img {
+        margin-top: 30px;
+        width: 28%;
+    }
+
+    .product__body .product__items .product-icon__list {
+        opacity: 0.6;
     }
 }
 
@@ -108,10 +126,12 @@ button:focus {
     .gallery__h3 {
         padding-top: 0;
         font-size: 16px;
+        margin: 0;
     }
 
     .gallery__p {
         font-size: 12px;
+        margin-top: 2px;
     }
 
     .gallery .row .col-4 .gallery__icon {
