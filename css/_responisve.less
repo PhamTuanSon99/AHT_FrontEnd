@@ -1,7 +1,7 @@
 
-@_header_color_res: rgba(8, 8, 8, 0.7);
-@_header_menu_li_res: #000;
-@_gallery_items_res: rgba(0,0,0,0.5);
+@header_color_res: rgba(8, 8, 8, 0.7);
+@header_menu_li_res: #000;
+@gallery_items_res: rgba(0,0,0,0.5);
 //desktop
 @media only screen and (min-width: 1200px) {
     .container {
@@ -58,7 +58,7 @@
 @media only screen and (max-width: 991px) {
     .header {
         position: relative;
-        background-color: @_header_color_res;
+        background-color: @header_color_res;
     }
 
     .header__menu--inline ul li {
@@ -168,7 +168,7 @@
                 font-weight: 700;
                 letter-spacing: 2px;
                 display: block;
-                background-color: @_header_menu_li_res;
+                background-color: @header_menu_li_res;
             }
         }
         
@@ -218,7 +218,7 @@
 
         &__items {
             margin-bottom: 20px;
-            border: 1px solid @_gallery_items_res;
+            border: 1px solid @gallery_items_res;
         }
 
         &__items:nth-child(2n+1) {
